@@ -1,0 +1,17 @@
+double sum(double, double);
+double product(double, double);
+
+
+double sum(double a, double b)
+{
+	double sum;
+	sum = a+b;
+	return sum;
+}
+
+double product(double a, double b)
+{
+  double product;
+  product = a*b;
+  return product;
+}
