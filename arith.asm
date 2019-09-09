@@ -2,8 +2,10 @@
 
 ;Assemble: nasm -f elf64 -l disc.lis -o disc.o disc.asm
 
+;long discriminant(long,long,long);
 
-Global disc
+global sum
+global product
 
 Segment .data
 ;empty
@@ -12,6 +14,7 @@ segment .bss
 ;empty
 
 segment .text
+
 Disc:
 push rbp
 mov rbp, rsp
@@ -57,4 +60,4 @@ pop rcx
 pop rbx
 pop rbp
 
-Ret
+ret
